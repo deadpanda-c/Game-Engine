@@ -9,7 +9,12 @@ set(EXAMPLE
 	main.cpp)
 
 
+# compile another cmakelists
+add_subdirectory(plugins/graphical/sfml)
+
+
 add_library(game-engine SHARED ${SOURCES})
 
 add_executable(example ${EXAMPLE})
 target_link_libraries(example game-engine)
+

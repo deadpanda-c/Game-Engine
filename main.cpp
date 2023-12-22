@@ -3,5 +3,6 @@
 int main(void)
 {
     Window win;
-    return 0;
+
+    win.createWindow("Hello");
 }
